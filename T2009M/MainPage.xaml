@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="T2009M.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T2009M"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ScrollViewer>
+        <Grid>
+            <TextBlock HorizontalAlignment="Left" Margin="324,100,0,0" Text="Student form" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="49" FontSize="16"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,200,0,0" Text="Roll Number" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtRollNumber" HorizontalAlignment="Left" Margin="389,186,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" PlaceholderText="Please enter roll number"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,267,0,0" Text="Full Name" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtFullName" HorizontalAlignment="Left" Margin="389,253,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" PlaceholderText="Please enter roll fullname"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,342,0,0" Text="Email" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="389,328,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" PlaceholderText="Please enter roll email"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,415,0,0" Text="Birthday" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,482,0,0" Text="Phone" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Margin="389,468,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" PlaceholderText="Please enter phone"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,558,0,0" Text="Address" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Margin="389,544,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" PlaceholderText="Please enter address" Height="160"/>
+            <DatePicker x:Name="datepickerBirthday" Margin="388,401,0,0" VerticalAlignment="Top" Width="296"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,774,0,0" Text="Gender" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <RadioButton Checked="RadioButton_Checked" Tag="male" Content="Male" Margin="403,768,0,0" VerticalAlignment="Top" GroupName="gender"/>
+            <RadioButton Checked="RadioButton_Checked" Tag="female" Content="Female" Margin="630,771,0,0" VerticalAlignment="Top" GroupName="gender" IsChecked="True"/>
+            <Button Click="Save" Content="Save" Margin="340,876,0,0" VerticalAlignment="Top" Width="134" Height="50"/>
+            <Button Click="Reset" Content="Reset" Margin="630,876,0,0" VerticalAlignment="Top" Width="134" Height="51"/>
+
+        </Grid>
+    </ScrollViewer>
+</Page>
